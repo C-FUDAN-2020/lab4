@@ -82,7 +82,8 @@ short x = (float)(4 / 3) * PI * (int)a * a * (double)a;
 ## 编程题
 
 Write a program to approximate the value of π using the following formula：
-![image](./formula.svg)
+
+<img src="./formula">
 
 Please answer how many items must the program calculate to get the values 3.14159.
 
