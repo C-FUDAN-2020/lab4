@@ -2,9 +2,7 @@
 
     本节目标：
         1. 巩固算术运算有关知识
-        2. 学会宏定义常量
-        3. 熟练使用循环语句与判断语句
-        4. 了解浮点数比较
+        2. 练习使用判断语句
 
 ## 获取及提交lab
 
@@ -79,13 +77,15 @@ short x = (float)(4 / 3) * PI * (int)a * a * (double)a;
 
 ## 任务二、编程题
 
-Write a program to approximate the value of π using the following formula：
+利用海伦公式计算三角形的面积。公式如下：
 
-![avatar](./formula.png)
+![avatar](./heron_formula.png)
 
-Please answer how many items must the program calculate to get the values 3.14159.
+输入：三角形三边的长度
+
+输出：如果该三边可以组成三角形则直接输出面积，保留2位小数；否则输出 `no anwser`
 
 > 注意：
-> 1. 请使用宏定义（`#define`）定义以上数值常量
-> 2. 浮点数并非真正意义上的实数，只是其在某个范围内的近似。因此两个浮点数比较大小时，不能简单地使用大于小于号进行比较，应该判断两个浮点数差值的绝对值是否近似为0。
-> 3. 绝对值计算可以调用 `<math.h>` 的库函数 `fabs()`
+> 1. 输入的三边长度可以使用double float类型的变量存储。
+> 2. 不考虑负数输入，0或者其他非法输入
+> 3. 根号运算请注意库`<math.h>`中的`sqrt(double)`函数
