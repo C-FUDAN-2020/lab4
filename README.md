@@ -79,7 +79,7 @@ short x = (float)(4 / 3) * PI * (int)a * a * (double)a;
 
 利用海伦公式计算三角形的面积。公式如下：
 
-![avatar](./heron_formula.png)
+![海伦公式](./heron_formula.png)
 
 输入：三角形三边的长度
 
